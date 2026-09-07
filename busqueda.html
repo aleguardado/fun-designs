@@ -24,23 +24,23 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
-                <li><a class="dropdown-item" href="productos.html">Todas las categorías</a></li>
+                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Personalización</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+              <a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
             </li>
           </ul>
 
           <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
-            <a href="#" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
-            <a href="#" class="cart-icon" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"><span class="cart-badge">0</span></a>
+            <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
+            <a href="#" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"></a>
             <a href="#" aria-label="Usuario"><img src="img/usuario.png" alt="Cuenta de usuario"></a>
           </div>
         </div>
@@ -49,46 +49,34 @@
   </header>
 
   <main>
-    <section id="productos" class="container-fluid">
+    <section id="sobre-nosotros" class="container-fluid">
       <div class="container py-5">
+        <h1 class="about-title text-center">Sobre Fun Designs</h1>
 
-        <div class="search-box mx-auto mb-5">
-          <img src="img/search.png" alt="" class="search-box-icon" width="35">
-          <input type="text" placeholder="Busca en Fun Designs" aria-label="Busca en Fun Designs">
-        </div>
+        <div class="row g-5 justify-content-center about-row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="about-card text-center h-100">
+              <img src="img/apoyamos-creatividad.png" class="about-image img-fluid" alt="Ilustración que representa creatividad">
+              <h2>Apoyamos la creatividad</h2>
+              <p>Cada pedido nos permite seguir creando y ofreciendo productos personalizados que representen la personalidad, las ideas y los momentos especiales de nuestros clientes.</p>
+            </article>
+          </div>
 
-        <div class="browse-list">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="about-card text-center h-100">
+              <img src="img/disenos-para-todos.png" class="about-image img-fluid" alt="Ilustración que representa diseños para todos">
+              <h2>Diseños para todos</h2>
+              <p>Desde regalos personalizados hasta productos para tu negocio, celebraciones o uso diario, contamos con una variedad de opciones para que encuentres o crees algo que realmente te represente.</p>
+            </article>
+          </div>
 
-          <article class="browse-card">
-            <div class="browse-thumb">
-              <img src="img/engravado.png" alt="Ropa bordada" class="img-fluid">
-            </div>
-            <div class="browse-info">
-              <h2>Ropa bordada</h2>
-              <p>Diseños bordados personalizados y de calidad.</p>
-            </div>
-          </article>
-
-          <article class="browse-card">
-            <div class="browse-thumb">
-              <img src="img/Casual.png" alt="Ropa casual" class="img-fluid">
-            </div>
-            <div class="browse-info">
-              <h2>Ropa casual</h2>
-              <p>Suéteres y prendas para un estilo cómodo y casual.</p>
-            </div>
-          </article>
-
-          <article class="browse-card">
-            <div class="browse-thumb">
-              <img src="img/jeans_2.png" alt="Pantalones" class="img-fluid">
-            </div>
-            <div class="browse-info">
-              <h2>Pantalones</h2>
-              <p>Pantalones con diseños personalizados y originales.</p>
-            </div>
-          </article>
-
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="about-card text-center h-100">
+              <img src="img/calidad-producto.png" class="about-image img-fluid" alt="Ilustración que representa calidad en cada producto">
+              <h2>Calidad en cada producto</h2>
+              <p>Nos importa que el resultado final sea tan bueno como la idea original. Por eso cuidamos cada etapa del proceso, desde el diseño hasta la impresión y el acabado, para ofrecer productos de calidad hechos con atención al detalle.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
