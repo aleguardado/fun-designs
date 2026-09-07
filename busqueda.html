@@ -49,34 +49,63 @@
   </header>
 
   <main>
-    <section id="sobre-nosotros" class="container-fluid">
+    <section id="encabezado-busqueda" class="container-fluid">
       <div class="container py-5">
-        <h1 class="about-title text-center">Sobre Fun Designs</h1>
-
-        <div class="row g-5 justify-content-center about-row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <article class="about-card text-center h-100">
-              <img src="img/apoyamos-creatividad.png" class="about-image img-fluid" alt="Ilustración que representa creatividad">
-              <h2>Apoyamos la creatividad</h2>
-              <p>Cada pedido nos permite seguir creando y ofreciendo productos personalizados que representen la personalidad, las ideas y los momentos especiales de nuestros clientes.</p>
-            </article>
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-12 col-md-7 text-center text-md-start">
+            <div class="search-question" aria-label="¿Qué estás buscando?">
+              <span class="question-yellow">¿Qué estás</span>
+              <span class="question-paper">buscando?</span>
+            </div>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-4">
-            <article class="about-card text-center h-100">
-              <img src="img/disenos-para-todos.png" class="about-image img-fluid" alt="Ilustración que representa diseños para todos">
-              <h2>Diseños para todos</h2>
-              <p>Desde regalos personalizados hasta productos para tu negocio, celebraciones o uso diario, contamos con una variedad de opciones para que encuentres o crees algo que realmente te represente.</p>
-            </article>
+          <div class="col-8 col-sm-6 col-md-4 text-center">
+            <img src="img/pato-busqueda.png" class="img-fluid search-duck" alt="Ilustración de un pato amarillo">
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-12 col-md-6 col-lg-4">
-            <article class="about-card text-center h-100">
-              <img src="img/calidad-producto.png" class="about-image img-fluid" alt="Ilustración que representa calidad en cada producto">
-              <h2>Calidad en cada producto</h2>
-              <p>Nos importa que el resultado final sea tan bueno como la idea original. Por eso cuidamos cada etapa del proceso, desde el diseño hasta la impresión y el acabado, para ofrecer productos de calidad hechos con atención al detalle.</p>
-            </article>
-          </div>
+    <section id="resultados-busqueda" class="container-fluid py-5">
+      <div class="container search-content">
+        <form class="search-form mb-5" role="search" action="#" method="get">
+          <label for="buscador" class="visually-hidden">Buscar en Fun Designs</label>
+          <span class="search-form-icon" aria-hidden="true">⌕</span>
+          <input id="buscador" name="q" type="search" class="form-control" placeholder="Busca en Fun Designs">
+          <button type="submit" class="search-submit" aria-label="Realizar búsqueda">›</button>
+        </form>
+
+        <div class="search-results-list">
+          <article class="search-result-card">
+            <img src="img/ropa-bordada.png" alt="Camiseta blanca con diseño bordado" class="search-result-image">
+            <div>
+              <h2>Ropa bordada</h2>
+              <p>Diseños bordados personalizados y de calidad.</p>
+            </div>
+          </article>
+
+          <article class="search-result-card">
+            <img src="img/ropa-casual-busqueda.png" alt="Suéter negro con diseño de gatos" class="search-result-image">
+            <div>
+              <h2>Ropa casual</h2>
+              <p>Suéteres y prendas para un estilo cómodo y casual.</p>
+            </div>
+          </article>
+
+          <article class="search-result-card">
+            <img src="img/pantalones-busqueda.png" alt="Pantalón de mezclilla con diseño personalizado" class="search-result-image">
+            <div>
+              <h2>Pantalones</h2>
+              <p>Pantalones con diseños personalizados y originales.</p>
+            </div>
+          </article>
+
+          <article class="search-result-card">
+            <img src="img/bolsos-busqueda.png" alt="Bolso blanco con ilustración de gato" class="search-result-image">
+            <div>
+              <h2>Bolsos</h2>
+              <p>Bolsos con diseños personalizados y originales.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
