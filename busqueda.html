@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fun Designs</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Fun Designs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-  <body>
-    <header>
+<body>
+  <header>
     <nav class="navbar navbar-expand-lg fun-navbar">
       <div class="container-fluid px-4 px-lg-5">
-        <a class="navbar-brand fun-brand" href="index.html">Fun Designs</a>
+        <a class="navbar-brand fun-brand" href="Home.html">Fun Designs</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
@@ -21,30 +21,79 @@
         <div class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="Home.html">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+              <a class="nav-link dropdown-toggle active" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
-                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
+                <li><a class="dropdown-item" href="Home.html#products-section">Productos destacados</a></li>
+                <li><a class="dropdown-item" href="productos.html">Todas las categorías</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Personalización</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
+              <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
             </li>
           </ul>
 
           <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
-            <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
-            <a href="#" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"></a>
+            <a href="#" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
+            <a href="#" class="cart-icon" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"><span class="cart-badge">0</span></a>
             <a href="#" aria-label="Usuario"><img src="img/usuario.png" alt="Cuenta de usuario"></a>
           </div>
         </div>
       </div>
     </nav>
   </header>
-  </body>
+
+  <main>
+    <section id="productos" class="container-fluid">
+      <div class="container py-5">
+
+        <div class="search-box mx-auto mb-5">
+          <img src="img/search.png" alt="" class="search-box-icon">
+          <input type="text" placeholder="Busca en Fun Designs" aria-label="Busca en Fun Designs">
+        </div>
+
+        <div class="browse-list">
+
+          <article class="browse-card">
+            <div class="browse-thumb">
+              <img src="img/engravado.png" alt="Ropa bordada" class="img-fluid">
+            </div>
+            <div class="browse-info">
+              <h2>Ropa bordada</h2>
+              <p>Diseños bordados personalizados y de calidad.</p>
+            </div>
+          </article>
+
+          <article class="browse-card">
+            <div class="browse-thumb">
+              <img src="img/Casual.png" alt="Ropa casual" class="img-fluid">
+            </div>
+            <div class="browse-info">
+              <h2>Ropa casual</h2>
+              <p>Suéteres y prendas para un estilo cómodo y casual.</p>
+            </div>
+          </article>
+
+          <article class="browse-card">
+            <div class="browse-thumb">
+              <img src="img/jeans_2.png" alt="Pantalones" class="img-fluid">
+            </div>
+            <div class="browse-info">
+              <h2>Pantalones</h2>
+              <p>Pantalones con diseños personalizados y originales.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
