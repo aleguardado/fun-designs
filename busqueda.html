@@ -1,115 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Búsqueda | Fun Designs</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos | Fun Designs</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg fun-navbar">
-      <div class="container-fluid px-4 px-lg-5">
-        <a class="navbar-brand fun-brand" href="index.html">Fun Designs</a>
+<header class="header">
+ <div> <span class="logo-text">Fun Designs</span> </div> 
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"> <a class="nav-link" href="productos.html">Productos</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#">Personalización</a></li>
+        <li class="nav-item"> <a class="nav-link text-nowrap" href="#">Sobre nosotros</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="header-icons">
+    <div class="icon-placeholder"> <img src="img/search.png" alt="busqueda" width="45"> </div>
+    <div class="icon-placeholder"> <img src="img/carrito.png" alt="carrito" width="45"> </div>
+    <div class="icon-placeholder"> <img src="img/usuario.png" alt="usuario" width="45"> </div>
+  </div>
+</header>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<main>
+  <section id="productos" class="container-fluid">
+    <div class="container py-5">
 
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
-                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Personalización</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
-            </li>
-          </ul>
-
-          <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
-            <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
-            <a href="#" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"></a>
-            <a href="#" aria-label="Usuario"><img src="img/usuario.png" alt="Cuenta de usuario"></a>
-          </div>
-        </div>
+      <div class="search-box mx-auto mb-5">
+        <img src="img/search.png" alt="" class="search-box-icon">
+        <input type="text" placeholder="Busca en Fun Designs" aria-label="Busca en Fun Designs">
       </div>
-    </nav>
-  </header>
 
-  <main>
-    <section id="encabezado-busqueda" class="container-fluid">
-      <div class="container py-5">
-        <div class="row align-items-center justify-content-center g-4">
-          <div class="col-12 col-md-7 text-center text-md-start">
-            <div class="search-question" aria-label="¿Qué estás buscando?">
-              <span class="question-yellow">¿Qué estás</span>
-              <span class="question-paper">buscando?</span>
-            </div>
+      <div class="browse-list">
+
+        <article class="browse-card">
+          <div class="browse-thumb">
+            <img src="img/Camisa_Bordada.png" alt="Ropa bordada" class="img-fluid">
           </div>
-          <div class="col-8 col-sm-6 col-md-4 text-center">
-            <img src="img/pato-busqueda.png" class="img-fluid search-duck" alt="Ilustración de un pato amarillo">
+          <div class="browse-info">
+            <h2>Ropa bordada</h2>
+            <p>Diseños bordados personalizados y de calidad.</p>
           </div>
-        </div>
+        </article>
+
+        <article class="browse-card">
+          <div class="browse-thumb">
+            <img src="img/Hoodie Angel.png" alt="Ropa casual" class="img-fluid">
+          </div>
+          <div class="browse-info">
+            <h2>Ropa casual</h2>
+            <p>Suéteres y prendas para un estilo cómodo y casual.</p>
+          </div>
+        </article>
+
+        <article class="browse-card">
+          <div class="browse-thumb">
+            <img src="img/Jeans.png" alt="Pantalones" class="img-fluid">
+          </div>
+          <div class="browse-info">
+            <h2>Pantalones</h2>
+            <p>Pantalones con diseños personalizados y originales.</p>
+          </div>
+        </article>
+
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section id="resultados-busqueda" class="container-fluid py-5">
-      <div class="container search-content">
-        <form class="search-form mb-5" role="search" action="#" method="get">
-          <label for="buscador" class="visually-hidden">Buscar en Fun Designs</label>
-          <span class="search-form-icon" aria-hidden="true">⌕</span>
-          <input id="buscador" name="q" type="search" class="form-control" placeholder="Busca en Fun Designs">
-          <button type="submit" class="search-submit" aria-label="Realizar búsqueda">›</button>
-        </form>
-
-        <div class="search-results-list">
-          <article class="search-result-card">
-            <img src="img/ropa-bordada.png" alt="Camiseta blanca con diseño bordado" class="search-result-image">
-            <div>
-              <h2>Ropa bordada</h2>
-              <p>Diseños bordados personalizados y de calidad.</p>
-            </div>
-          </article>
-
-          <article class="search-result-card">
-            <img src="img/angel_cats.png" alt="Suéter negro con diseño de gatos" class="search-result-image">
-            <div>
-              <h2>Ropa casual</h2>
-              <p>Suéteres y prendas para un estilo cómodo y casual.</p>
-            </div>
-          </article>
-
-          <article class="search-result-card">
-            <img src="img/jeans.png" alt="Pantalón de mezclilla con diseño personalizado" class="search-result-image">
-            <div>
-              <h2>Pantalones</h2>
-              <p>Pantalones con diseños personalizados y originales.</p>
-            </div>
-          </article>
-
-          <article class="search-result-card">
-            <img src="img/cat_sundae.png" alt="Bolso blanco con ilustración de gato" class="search-result-image">
-            <div>
-              <h2>Bolsos</h2>
-              <p>Bolsos con diseños personalizados y originales.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
