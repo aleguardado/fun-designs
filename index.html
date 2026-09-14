@@ -23,133 +23,44 @@
 
 <body>
 
-<!-- ========================================
-     NAVBAR
-======================================== -->
-
-<header>
+ <header>
     <nav class="navbar navbar-expand-lg fun-navbar">
+      <div class="container-fluid px-4 px-lg-5">
+        <a class="navbar-brand fun-brand" href="index.html">Fun Designs</a>
 
-        <div class="container-fluid px-4 px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-brand fun-brand fs-2" href="index.html">
-                Fun Designs
-            </a>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
+                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personalización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
+            </li>
+          </ul>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal"
-                aria-expanded="false"
-                aria-label="Abrir menú de navegación">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-
-                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="index.html">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-
-                        <a
-                            class="nav-link dropdown-toggle border border-dark px-3 py-1 text-dark"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false">
-
-                            Productos
-                        </a>
-
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <a
-                                    class="dropdown-item"
-                                    href="#products-section">
-                                    Productos destacados
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    class="dropdown-item"
-                                    href="#categories-section">
-                                    Categorías
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Personalización
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="sobre-nosotros.html">
-                            Sobre nosotros
-                        </a>
-                    </li>
-
-                </ul>
-
-
-                <!-- ICONOS -->
-
-                <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
-
-                    <a href="busqueda.html" aria-label="Buscar">
-                        <img src="img/search.png" alt="Buscar">
-                    </a>
-
-                    <a
-                        href="#"
-                        aria-label="Carrito"
-                        class="position-relative">
-
-                        <img
-                            src="img/carrito.png"
-                            alt="Carrito de compras">
-
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-dark border border-dark px-1 py-0 cart-number">
-                            0
-                        </span>
-
-                    </a>
-
-                    <a href="#" aria-label="Usuario">
-                        <img
-                            src="img/usuario.png"
-                            alt="Cuenta de usuario">
-                    </a>
-
-                </div>
-
-            </div>
-
+          <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
+            <a href="#" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"></a>
+            <a href="#" aria-label="Usuario"><img src="img/usuario.png" alt="Cuenta de usuario"></a>
+          </div>
         </div>
-
+      </div>
     </nav>
-</header>
+  </header>
 
 
 <!-- ========================================
