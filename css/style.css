@@ -1042,59 +1042,6 @@ button {
     }
 }
 
-/* --- FUENTES Y ESTILOS GENERALES --- */
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #1a1a1a;
-  background-color: #5b89a4; /* Azul de fondo principal */
-}
-
-/* --- BARRA DE NAVEGACIÓN --- */
-.mi-navbar {
-  background-color: #e2ba49; /* Mostaza/Amarillo */
-  border-bottom: 2px solid #1a1a1a;
-}
-
-.logo-texto {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #1a1a1a !important;
-}
-
-.mi-navbar .nav-link {
-  color: #1a1a1a !important;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.select-productos {
-  background-color: #e2ba49;
-  border: 1px solid #1a1a1a;
-  border-radius: 4px;
-  font-weight: 500;
-  color: #1a1a1a;
-  padding: 2px 25px 2px 10px;
-}
-
-.iconos-nav a {
-  color: #1a1a1a;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.badge-carrito {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: #5b89a4;
-  color: white;
-  font-size: 0.65rem;
-  padding: 2px 5px;
-  border-radius: 50%;
-  font-weight: bold;
-}
-
 /* --- SECCIONES Y CONTENIDOS --- */
 .seccion-base {
   background-color: #5b89a4;
