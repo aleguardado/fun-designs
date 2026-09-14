@@ -1044,19 +1044,19 @@ button {
 
 /* --- SECCIONES Y CONTENIDOS --- */
 .seccion-base {
-  background-color: #5b89a4;
+  background-color: #5E8EA6;
   color: #ffffff;
 }
 
 .titulo-principal {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: #ffffff;
 }
 
 .subtitulo-card {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-weight: 600;
   font-size: 1.35rem;
   color: #1a1a1a;
