@@ -1041,3 +1041,60 @@ button {
         font-size: 25px;
     }
 }
+
+/* --- CAJAS CON BORDE NEGRO (ESTILO DE LA IMAGEN) --- */
+.caja-borde-negro {
+  background-color: #82a7bc; /* Azul más claro para contenedores */
+  border: 2px solid #1a1a1a;
+  border-radius: 2px;
+  color: #1a1a1a;
+  box-shadow: 0px 4px 0px #1a1a1a; /* Sombra sólida estilo retro/manga */
+  transition: transform 0.2s ease;
+}
+
+.caja-borde-negro:hover {
+  transform: translateY(-3px);
+}
+
+/* --- ESTILOS DE FORMULARIO --- */
+.campo-input {
+  border: 1.5px solid #1a1a1a;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.campo-input:focus {
+  border-color: #e2ba49;
+  box-shadow: 0 0 0 0.25rem rgba(226, 186, 73, 0.4);
+}
+
+.btn-enviar {
+  background-color: #e2ba49;
+  color: #1a1a1a;
+  font-weight: 600;
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px #1a1a1a;
+  transition: all 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #1a1a1a;
+  color: #e2ba49;
+  border-color: #e2ba49;
+}
+
+/* Iconos circulares estilo caricatura para Sobre Nosotros */
+.icono-ilustracion {
+  width: 90px;
+  height: 90px;
+  background-color: #e2ba49;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
