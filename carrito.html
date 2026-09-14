@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito | Fun Designs</title>
+
+    <meta name="description"
+        content="Revisa tu pedido y completa tus datos de envío y pago en Fun Designs.">
+    <meta name="keywords"
+        content="Fun Designs, carrito, camisetas personalizadas, productos personalizados">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MX5EQNZ4L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-8MX5EQNZ4L');
+</script>
+
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header>
+    <nav class="navbar navbar-expand-lg fun-navbar">
+      <div class="container-fluid px-4 px-lg-5">
+        <a class="navbar-brand fun-brand" href="index.html">Fun Designs</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
+                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personalización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
+            </li>
+          </ul>
+
+          <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
+            <a href="#" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"></a>
+            <a href="#" aria-label="Usuario"><img src="img/usuario.png" alt="Cuenta de usuario"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+    <!-- ================================
+         CARRITO
+    ================================= -->
+
+    <main class="checkout-page">
+
+        <div class="checkout-container">
+
+
+            <!-- COLUMNA IZQUIERDA -->
+
+            <section class="checkout-left">
+
+
+                <!-- PRODUCTO -->
+
+                <div class="checkout-box product-box">
+
+                    <h3>
+                        Camisa Skater Break | Rojo | S
+                    </h3>
+
+
+                    <div class="product-checkout">
+
+
+                        <div class="checkout-product-image">
+
+                            <img
+                                src="img/Camisa Skater.png"
+                                alt="Camisa Skater Break">
+
+                        </div>
+
+
+                        <div class="product-details">
+
+                            <p>
+                                Color: Gris oscuro
+
+                                <button type="button">
+                                    Cambiar
+                                </button>
+                            </p>
+
+
+                            <p>
+                                Talla: S
+
+                                <button type="button">
+                                    Cambiar
+                                </button>
+                            </p>
+
+
+                            <div class="quantity">
+
+                                <span>
+                                    Unidades:
+                                </span>
+
+
+                                <div class="quantity-controls">
+
+                                    <button type="button">
+                                        −
+                                    </button>
+
+                                    <span>
+                                        1
+                                    </span>
+
+                                    <button type="button">
+                                        +
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DECORACIÓN -->
+
+                        <div class="product-decoration">
+
+                            <span>✦</span>
+                            <span>✦</span>
+                            <span>✦</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+
+                        <div class="product-actions">
+
+                            <button type="button">
+                                Editar
+                            </button>
+
+                            <button type="button">
+                                Duplicar
+                            </button>
+
+                            <button type="button">
+                                Eliminar
+                            </button>
+
+                        </div>
+
+
+                        <strong class="product-price">
+                            $35.19
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DIRECCIÓN DE ENVÍO -->
+
+                <div class="checkout-box shipping-box">
+
+                    <h3>
+                        Dirección de envío
+                    </h3>
+
+
+                    <form>
+
+                        <div class="shipping-grid">
+
+
+                            <div class="form-group">
+
+                                <label for="nombre">
+                                    Nombre Completo
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nombre">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="empresa">
+                                    Empresa (opcional)
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="empresa">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="direccion1">
+                                    Dirección - Línea 1
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="direccion1">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="telefono">
+                                    Teléfono
+                                </label>
+
+
+                                <div class="phone-input">
+
+                                    <span>
+                                        +504
+                                    </span>
+
+                                    <input
+                                        type="tel"
+                                        id="telefono">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="direccion2">
+                                    Dirección - Línea 2
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="direccion2">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="pais">
+                                    País
+                                </label>
+
+
+                                <select id="pais">
+
+                                    <option value=""></option>
+
+                                    <option value="honduras">
+                                        Honduras
+                                    </option>
+
+                                    <option value="guatemala">
+                                        Guatemala
+                                    </option>
+
+                                    <option value="el-salvador">
+                                        El Salvador
+                                    </option>
+
+                                    <option value="nicaragua">
+                                        Nicaragua
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="codigo">
+                                    Código postal
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="codigo">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="ciudad">
+                                    Ciudad
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="ciudad">
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- COLUMNA DERECHA -->
+
+            <aside class="checkout-right">
+
+
+                <!-- RESUMEN DEL PEDIDO -->
+
+                <div class="checkout-box order-summary">
+
+                    <h3>
+                        Resumen del Pedido
+                    </h3>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Productos (1 artículo)
+                        </span>
+
+                        <span>
+                            $35.19
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Digitalización de archivo (1 artículo)
+                        </span>
+
+                        <span>
+                            $6.50
+                        </span>
+
+                    </div>
+
+
+                    <hr>
+
+
+                    <div class="subtotal">
+
+                        <strong>
+                            Subtotal*
+                        </strong>
+
+                        <strong>
+                            $41.69
+                        </strong>
+
+                    </div>
+
+
+                    <small>
+                        *Este precio no es definitivo.
+                        En el siguiente paso se añadirán
+                        el envío y el IVA.
+                    </small>
+
+                </div>
+
+
+
+                <!-- MÉTODO DE PAGO -->
+
+                <div class="checkout-box payment-box">
+
+                    <h3>
+                        Selecciona un método de pago
+                    </h3>
+
+
+                    <p class="my-cards">
+                        Mis tarjetas
+                    </p>
+
+
+                    <hr>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            checked>
+
+                        Mastercard que termina en 5489
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment">
+
+                        Mastercard que termina en 1578
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment">
+
+                        VISA que termina en 9635
+
+                    </label>
+
+
+                    <button
+                        class="continue-button"
+                        type="button">
+
+                        Continuar con envío
+
+                    </button>
+
+
+                    <div class="payment-decoration">
+                        <img src="img/promo.png" alt="">
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Bootstrap -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
