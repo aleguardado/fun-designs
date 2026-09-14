@@ -92,6 +92,120 @@
     </section>
   </main>
 
+<section id="contacto" class="seccion-base py-5 pt-4">
+    <div class="container text-center">
+      <h2 class="titulo-principal mb-2">Contáctanos</h2>
+      <p class="fs-5 mb-4">¿Tienes una idea en mente? Solicita tu encargo o resuelve tus dudas con nosotros.</p>
+
+      <!-- Botones de ayuda (Estilo de la imagen de Contacto) -->
+      <div class="row g-4 justify-content-center mb-5">
+        <div class="col-md-5">
+          <div class="caja-borde-negro p-4">
+            <h3 class="subtitulo-card">Cambios y Garantías</h3>
+            <p class="mb-0">¿No te quedó o tuviste algún detalle? Te lo cambiamos sin complicaciones.</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="caja-borde-negro p-4">
+            <h3 class="subtitulo-card">Contacta a un agente</h3>
+            <p class="mb-0">¿Tuviste un problema o duda especial? Te ayudamos de inmediato.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE ENCARGO -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="caja-borde-negro p-4 p-md-5 text-start">
+            <h3 class="subtitulo-card text-center mb-4">Formulario de Encargo Especial</h3>
+            
+            <form action="#" method="POST">
+              <div class="row g-3">
+                <!-- Nombre / Empresa -->
+                <div class="col-md-6">
+                  <label for="nombreEmpresa" class="form-label fw-medium">Nombre completo o Empresa *</label>
+                  <input type="text" class="form-control campo-input" id="nombreEmpresa" placeholder="Ej. María López / FunCorp" required>
+                </div>
+
+                <!-- Correo -->
+                <div class="col-md-6">
+                  <label for="correo" class="form-label fw-medium">Correo electrónico *</label>
+                  <input type="email" class="form-control campo-input" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label fw-medium">Número de teléfono *</label>
+                  <input type="tel" class="form-control campo-input" id="telefono" placeholder="+504 9999-9999" required>
+                </div>
+
+                <!-- Ciudad -->
+                <div class="col-md-6">
+                  <label for="ciudad" class="form-label fw-medium">Ciudad *</label>
+                  <input type="text" class="form-control campo-input" id="ciudad" placeholder="Tegucigalpa, San Pedro Sula..." required>
+                </div>
+
+                <!-- Tipo de Encargo -->
+                <div class="col-12">
+                  <label for="tipoEncargo" class="form-label fw-medium">Tipo de encargo *</label>
+                  <select class="form-select campo-input" id="tipoEncargo" required>
+                    <option value="" selected disabled>Selecciona el producto a personalizar...</option>
+                    <option value="camiseta">Camisetas</option>
+                    <option value="tazas">Tazas</option>
+                    <option value="bolsos">Bolsos / Tote bags</option>
+                    <option value="estampados">Estampados</option>
+                    <option value="stickers">Stickers / Calcomanías</option>
+                    <option value="gorras">Gorras</option>
+                    <option value="hoodies">Hoodies / Sudaderas</option>
+                    <option value="uniformes">Uniformes</option>
+                    <option value="posters">Posters / Afiches</option>
+                    <option value="tarjetas">Tarjetas de presentación</option>
+                    <option value="otro">Otro tipo de proyecto</option>
+                  </select>
+                </div>
+
+                <!-- Detalles del encargo -->
+                <div class="col-12">
+                  <label for="detalles" class="form-label fw-medium">Detalles del encargo (Cantidad, colores, ideas) *</label>
+                  <textarea class="form-control campo-input" id="detalles" rows="4" placeholder="Describe brevemente lo que necesitas..." required></textarea>
+                </div>
+
+                <!-- Botón de Envío -->
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-enviar px-5 py-2">Enviar Solicitud</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enlaces Rápidos (Estilo Footer/Accesos Directos de la Imagen) -->
+      <h3 class="titulo-principal fs-3 mt-5 mb-4">Enlaces rápidos y otra información</h3>
+      <div class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <div class="caja-borde-negro p-3 d-flex align-items-center justify-content-center gap-3">
+            <i class="fa-solid fa-truck-fast fa-lg"></i>
+            <span>Tracking / estado de tu orden</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="caja-borde-negro p-3 d-flex align-items-center justify-content-center gap-3">
+            <i class="fa-solid fa-circle-question fa-lg"></i>
+            <span>FAQ / Centro de apoyo</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="caja-borde-negro p-3 d-flex align-items-center justify-content-center gap-3">
+            <i class="fa-solid fa-credit-card fa-lg"></i>
+            <span>Reembolsos</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 <!-- ========================================
      FOOTER
 ======================================== -->
