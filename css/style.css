@@ -969,10 +969,6 @@ button {
 
     /* FOOTER */
 
-   .footer {
-      margin-top: 0px;
-   }
-   
     .footer-title h2 {
         font-size: 34px;
     }
@@ -1048,19 +1044,19 @@ button {
 
 /* --- SECCIONES Y CONTENIDOS --- */
 .seccion-base {
-  background-color: #5E8EA6;
+  background-color: #5b89a4;
   color: #ffffff;
 }
 
 .titulo-principal {
-  font-family: 'Poppins', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: #ffffff;
 }
 
 .subtitulo-card {
-  font-family: 'Poppins', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-size: 1.35rem;
   color: #1a1a1a;
@@ -1127,4 +1123,412 @@ button {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+/* ================================
+   PÁGINA CARRITO
+   ================================ */
+
+.checkout-page {
+    min-height: calc(100vh - 100px);
+    background: #5E8EA6;
+    padding: 25px 30px 35px;
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 925px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    gap: 16px;
+}
+
+.checkout-left,
+.checkout-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkout-box {
+    background: #94B2C0;
+    border: 2px solid #000;
+    padding: 25px 40px;
+}
+
+.checkout-box h3 {
+    margin: 0 0 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* PRODUCTO */
+
+.product-box {
+    min-height: 228px;
+}
+
+.product-checkout {
+    position: relative;
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #000;
+    padding-bottom: 9px;
+}
+
+.checkout-product-image {
+    width: 103px;
+    height: 103px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #000;
+    background: #94B2C0;
+}
+
+.checkout-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-details {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.product-details p {
+    margin: 0 0 7px;
+}
+
+.product-details button {
+    border: none;
+    background: transparent;
+    font-size: 9px;
+    color: #555;
+    margin-left: 8px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button,
+.quantity-controls span {
+    width: 22px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #555;
+    background: transparent;
+
+    font-size: 12px;
+}
+
+.quantity-controls span {
+    border-left: none;
+    border-right: none;
+}
+
+
+/* DECORACIÓN */
+
+.product-decoration {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+    width: 105px;
+    height: 90px;
+}
+
+.product-decoration span {
+    position: absolute;
+    font-size: 38px;
+}
+
+.product-decoration span:nth-child(1) {
+    left: 0;
+    top: 5px;
+}
+
+.product-decoration span:nth-child(2) {
+    right: 0;
+    top: 25px;
+    font-size: 55px;
+}
+
+.product-decoration span:nth-child(3) {
+    left: 20px;
+    bottom: 0;
+    font-size: 28px;
+}
+
+
+/* PARTE INFERIOR */
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 25px;
+}
+
+.product-actions button {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.product-price {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+}
+
+
+/* DIRECCIÓN */
+
+.shipping-box {
+    min-height: 340px;
+}
+
+.shipping-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 26px;
+    row-gap: 7px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 26px;
+
+    background: transparent;
+    border: 2px solid #000;
+
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.phone-input {
+    display: flex;
+}
+
+.phone-input span {
+    width: 60px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #000;
+    border-right: none;
+
+    font-size: 12px;
+}
+
+.phone-input input {
+    flex: 1;
+}
+
+
+/* RESUMEN */
+
+.order-summary {
+    min-height: 267px;
+    padding: 25px 30px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.order-summary hr {
+    margin: 22px -12px 17px;
+    border: 0;
+    border-top: 1px solid #000;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.order-summary small {
+    display: block;
+    margin-top: 3px;
+    font-size: 7px;
+}
+
+
+/* PAGO */
+
+.payment-box {
+    min-height: 267px;
+    position: relative;
+    padding: 25px 30px;
+}
+
+.my-cards {
+    margin: 0 0 5px;
+    font-size: 13px;
+    color: #666;
+}
+
+.payment-box hr {
+    margin: 10px -12px 10px;
+    border: 0;
+    border-top: 1px solid #000;
+}
+
+.payment-option {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.payment-option input {
+    margin-right: 6px;
+    accent-color: #000;
+}
+
+.continue-button {
+    display: block;
+
+    margin: 43px auto 0;
+    padding: 8px 12px;
+
+    background: #94B2C0;
+    border: 2px solid #000;
+    border-radius: 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+/* DECORACIÓN DEL PAGO */
+
+.payment-decoration {
+    position: absolute;
+    right: -20px;
+    bottom: 15px;
+
+    width: 90px;
+}
+
+.payment-decoration img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 991.98px) {
+
+    .checkout-container {
+        width: 100%;
+        max-width: 700px;
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-page {
+        padding: 25px 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .checkout-page {
+        padding: 15px 10px;
+    }
+
+    .checkout-box {
+        padding: 20px;
+    }
+
+    .shipping-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-decoration {
+        display: none;
+    }
+
+    .product-actions {
+        gap: 10px;
+    }
+
+    .product-actions button {
+        font-size: 13px;
+    }
+
+    .product-price {
+        font-size: 17px;
+    }
+
+    .summary-row {
+        font-size: 11px;
+    }
+
+    .payment-option {
+        font-size: 11px;
+    }
+
+    .continue-button {
+        margin-top: 30px;
+    }
+
+    .payment-decoration {
+        display: none;
+    }
 }
