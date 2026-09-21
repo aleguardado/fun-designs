@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce y personaliza la Camisa Skater Break de Fun Designs.">
+    <title>Camisa Skater Break | Fun Designs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detalle-page">
+    <header>
+        <nav class="navbar navbar-expand-lg fun-navbar">
+            <div class="container-fluid px-4 px-lg-5">
+                <a class="navbar-brand fun-brand" href="index.html">Fun Designs</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
+                                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
+                                <li><a class="dropdown-item" href="busqueda.html">Explorar productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="personalizar_producto.html">Personalización</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+
+                    <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                        <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt=""></a>
+                        <a href="carrito.html" aria-label="Carrito de compras"><img src="img/carrito.png" alt=""></a>
+                        <a href="#" aria-label="Cuenta de usuario"><img src="img/usuario.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="detalle-main">
+        <div class="detalle-grid">
+            <section class="detalle-galeria" aria-label="Imágenes de Camisa Skater Break">
+                <div class="detalle-preview" id="detalle-preview">
+                    <img id="detalle-imagen-principal" src="img/Camisa Skater.png"
+                        alt="Camisa Skater Break blanca, vista frontal" width="414" height="401">
+                </div>
+
+                <div class="detalle-miniaturas" role="group" aria-label="Cambiar vista del producto">
+                    <button class="detalle-miniatura" type="button" data-vista="1" aria-label="Vista 1: camiseta inclinada" aria-pressed="false">
+                        <img src="img/detalle-vista-1.png" alt="" width="118" height="122">
+                    </button>
+                    <button class="detalle-miniatura" type="button" data-vista="2" aria-label="Vista 2: acercamiento al diseño" aria-pressed="false">
+                        <img src="img/detalle-vista-2.png" alt="" width="118" height="122">
+                    </button>
+                    <button class="detalle-miniatura" type="button" data-vista="3" aria-label="Vista 3: detalle superior de la camiseta" aria-pressed="false">
+                        <img src="img/detalle-vista-3.png" alt="" width="118" height="122">
+                    </button>
+                    <button class="detalle-miniatura" type="button" data-vista="4" aria-label="Vista 4: estampado en primer plano" aria-pressed="false">
+                        <img src="img/detalle-vista-4.png" alt="" width="118" height="122">
+                    </button>
+                    <button class="detalle-miniatura" type="button" data-vista="5" aria-label="Vista 5: detalle del estampado" aria-pressed="false">
+                        <img src="img/detalle-vista-5.png" alt="" width="118" height="122">
+                    </button>
+                </div>
+            </section>
+
+            <section class="detalle-info" aria-labelledby="detalle-titulo">
+                <h1 id="detalle-titulo">Camisa Skater Break</h1>
+                <div class="detalle-rating" role="img" aria-label="Calificación: cuatro estrellas y media de cinco">
+                    <span aria-hidden="true">★★★★</span><span class="detalle-media-estrella" aria-hidden="true">☆<span>★</span></span>
+                </div>
+                <hr class="detalle-separador">
+
+                <fieldset class="detalle-grupo detalle-tecnica">
+                    <legend>Técnica</legend>
+                    <div class="detalle-tecnicas">
+                        <button class="detalle-tecnica-btn" type="button" data-tecnica="Impresión" aria-pressed="true">Impresión</button>
+                        <button class="detalle-tecnica-btn" type="button" data-tecnica="Bordado" aria-pressed="false">Bordado</button>
+                    </div>
+                </fieldset>
+
+                <fieldset class="detalle-grupo detalle-colores">
+                    <legend>Color</legend>
+                    <div class="detalle-swatches">
+                        <button type="button" class="detalle-swatch" data-color="Rojo" aria-label="Rojo" aria-pressed="true" style="--swatch: #9b3329;"></button>
+                        <button type="button" class="detalle-swatch" data-color="Verde" aria-label="Verde" aria-pressed="false" style="--swatch: #647467;"></button>
+                        <button type="button" class="detalle-swatch" data-color="Mostaza" aria-label="Mostaza" aria-pressed="false" style="--swatch: #b99e46;"></button>
+                        <button type="button" class="detalle-swatch" data-color="Terracota" aria-label="Terracota" aria-pressed="false" style="--swatch: #ac5637;"></button>
+                    </div>
+                </fieldset>
+
+                <fieldset class="detalle-grupo detalle-tallas">
+                    <legend>Talla</legend>
+                    <div class="detalle-tallas-opciones">
+                        <button type="button" data-talla="XS" aria-pressed="false">XS</button>
+                        <button type="button" data-talla="S" aria-pressed="true">S</button>
+                        <button type="button" data-talla="M" aria-pressed="false">M</button>
+                        <button type="button" data-talla="L" aria-pressed="false">L</button>
+                        <button type="button" data-talla="XL" aria-pressed="false">XL</button>
+                    </div>
+                </fieldset>
+
+                <div class="detalle-precio" aria-label="Precio: treinta y cinco dólares con diecinueve centavos">
+                    <span>Precio</span>
+                    <strong>$35.19</strong>
+                </div>
+
+                <img class="detalle-estrella" src="img/Star.png" alt="" width="300" height="299" aria-hidden="true">
+                <a id="detalle-personalizar" class="detalle-cta" href="personalizar_producto.html?producto=Camisa%20Skater%20Break&amp;tecnica=Impresi%C3%B3n&amp;color=Rojo&amp;talla=S">
+                    Empieza a Diseñar
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            const preview = document.getElementById('detalle-preview');
+            const principal = document.getElementById('detalle-imagen-principal');
+            const enlace = document.getElementById('detalle-personalizar');
+            const seleccion = { tecnica: 'Impresión', color: 'Rojo', talla: 'S' };
+
+            function actualizarEnlace() {
+                const parametros = new URLSearchParams({
+                    producto: 'Camisa Skater Break',
+                    tecnica: seleccion.tecnica,
+                    color: seleccion.color,
+                    talla: seleccion.talla
+                });
+                enlace.href = `personalizar_producto.html?${parametros.toString()}`;
+            }
+
+            function activarOpcion(botones, elegido) {
+                botones.forEach(boton => {
+                    boton.setAttribute('aria-pressed', String(boton === elegido));
+                });
+            }
+
+            const miniaturas = [...document.querySelectorAll('.detalle-miniatura')];
+            const vistas = [
+                'Camisa Skater Break blanca, vista frontal',
+                'Camisa Skater Break, vista inclinada',
+                'Acercamiento al estampado de la Camisa Skater Break',
+                'Detalle superior de la Camisa Skater Break',
+                'Detalle del estampado de la Camisa Skater Break',
+                'Primer plano del estampado de la Camisa Skater Break'
+            ];
+            miniaturas.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    const vista = Number(boton.dataset.vista);
+                    preview.dataset.vista = String(vista);
+                    principal.alt = vistas[vista];
+                    activarOpcion(miniaturas, boton);
+                });
+            });
+
+            const tecnicas = [...document.querySelectorAll('.detalle-tecnica-btn')];
+            tecnicas.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    seleccion.tecnica = boton.dataset.tecnica;
+                    activarOpcion(tecnicas, boton);
+                    actualizarEnlace();
+                });
+            });
+
+            const colores = [...document.querySelectorAll('.detalle-swatch')];
+            colores.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    seleccion.color = boton.dataset.color;
+                    activarOpcion(colores, boton);
+                    actualizarEnlace();
+                });
+            });
+
+            const tallas = [...document.querySelectorAll('.detalle-tallas-opciones button')];
+            tallas.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    seleccion.talla = boton.dataset.talla;
+                    activarOpcion(tallas, boton);
+                    actualizarEnlace();
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
