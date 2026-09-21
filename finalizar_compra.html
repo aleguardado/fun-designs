@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar compra | Fun Designs</title>
+
+    <meta name="description" content="Completa tus datos de pago y envío para finalizar tu pedido en Fun Designs.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .finalizar-page {
+            position: relative;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 70px 20px;
+            background: #5E8EA6;
+        }
+
+        .payment-burst {
+            position: absolute;
+            width: min(800px, 88vw);
+            aspect-ratio: 1.35;
+            background: #DFBB35;
+            clip-path: polygon(
+                50% 0%, 55% 26%, 70% 12%, 68% 34%,
+                94% 27%, 73% 45%, 100% 53%, 72% 58%,
+                90% 85%, 62% 70%, 58% 100%, 49% 73%,
+                32% 94%, 37% 67%, 8% 78%, 28% 57%,
+                0% 46%, 29% 44%, 11% 17%, 39% 34%
+            );
+            filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.28));
+        }
+
+        .payment-card {
+            position: relative;
+            z-index: 1;
+            width: min(470px, 100%);
+            min-height: 480px;
+            padding: 28px 27px 34px;
+            background: #b7ccd6;
+            box-shadow: 0 4px 9px rgba(0, 0, 0, 0.18);
+        }
+
+        .payment-card h1,
+        .payment-card h2 {
+            margin: 0 0 10px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .payment-fields {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 14px 16px;
+        }
+
+        .payment-fields .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .payment-card input[type="text"],
+        .payment-card input[type="email"] {
+            width: 100%;
+            height: 32px;
+            padding: 4px 8px;
+            border: 3px solid #111;
+            border-radius: 0;
+            outline: none;
+            background: transparent;
+            color: #000;
+            font-family: inherit;
+            font-size: 13px;
+        }
+
+        .payment-card input::placeholder {
+            color: #62889d;
+            opacity: 0.8;
+        }
+
+        .delivery-options {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin: 34px 4px 17px;
+        }
+
+        .delivery-options label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
+            white-space: nowrap;
+        }
+
+        .delivery-options input {
+            width: 23px;
+            height: 23px;
+            margin: 0;
+            accent-color: #94B2C0;
+        }
+
+        .shipping-fields {
+            display: grid;
+            gap: 13px;
+        }
+
+        .finish-order-button {
+            display: block;
+            margin: 35px auto 0;
+            padding: 8px 14px;
+            border: 2px solid #000;
+            border-radius: 11px;
+            background: #b7ccd6;
+            color: #000;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .finish-order-button:hover,
+        .finish-order-button:focus {
+            background: #DFBB35;
+        }
+
+        @media (max-width: 575.98px) {
+            .finalizar-page {
+                padding: 45px 15px;
+            }
+
+            .payment-burst {
+                width: 125vw;
+            }
+
+            .payment-card {
+                min-height: auto;
+                padding: 24px 20px 30px;
+            }
+
+            .payment-fields {
+                grid-template-columns: 1fr;
+            }
+
+            .payment-fields .full-width {
+                grid-column: auto;
+            }
+
+            .delivery-options {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 25px;
+            }
+
+            .delivery-options label {
+                font-size: 17px;
+            }
+
+            .finish-order-button {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fun-navbar">
+            <div class="container-fluid px-4 px-lg-5">
+                <a class="navbar-brand fun-brand" href="index.html">Fun Designs</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#products-section">Productos destacados</a></li>
+                                <li><a class="dropdown-item" href="index.html#categories-section">Categorías</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="personalizar_producto.html">Personalización</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                        <a href="busqueda.html" aria-label="Buscar"><img src="img/search.png" alt="Buscar"></a>
+                        <a href="carrito.html" aria-label="Carrito"><img src="img/carrito.png" alt="Carrito de compras"></a>
+                        <a href="#" aria-label="Usuario"><img src="img/usuario.png" alt="Cuenta de usuario"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="finalizar-page">
+        <div class="payment-burst" aria-hidden="true"></div>
+
+        <section class="payment-card" aria-labelledby="payment-title">
+            <h1 id="payment-title">Método de pago</h1>
+
+            <form>
+                <div class="payment-fields">
+                    <input class="full-width" type="text" name="numero-tarjeta" placeholder="Número de tarjeta" aria-label="Número de tarjeta">
+                    <input type="text" name="fecha-expiracion" placeholder="Fecha de expiración" aria-label="Fecha de expiración">
+                    <input type="text" name="cvv" placeholder="CVV" aria-label="CVV">
+                    <input class="full-width" type="email" name="correo" placeholder="Correo electrónico" aria-label="Correo electrónico">
+                </div>
+
+                <div class="delivery-options">
+                    <label><input type="checkbox" name="envio" checked> Envio</label>
+                    <label><input type="checkbox" name="recoger-local"> Recoger en el local</label>
+                </div>
+
+                <h2>Dirección de envío</h2>
+
+                <div class="shipping-fields">
+                    <input type="text" name="nombre-completo" placeholder="Nombre completo" aria-label="Nombre completo">
+                    <input type="text" name="direccion" placeholder="Dirección" aria-label="Dirección">
+                </div>
+
+                <button class="finish-order-button" type="submit">Finalizar pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
